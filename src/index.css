@@ -1,0 +1,184 @@
+.services-title {
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 30px; /* Adjust as needed */
+    font-size: 2.5rem; /* Optional: adjust font size */
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better separation */
+  }
+
+/* Navbar.css */
+
+.navbar {
+  background-color: #f8f9fa; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Bold brand name */
+  font-size: 1.5rem; /* Larger font size for brand */
+}
+
+.nav-link {
+  color: #007bff; /* Primary color for links */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.dropdown-toggle {
+  color: #007bff; /* Primary color for dropdown toggle */
+}
+
+.dropdown-item {
+  color: #212529; /* Default color for dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Light background on hover */
+}
+
+.navbar-text {
+  margin-top: 10px; /* Space above buttons */
+}
+
+/* Navbar.css */
+
+.btn-custom {
+  padding: 10px 30px; /* Adjust padding for a balanced look */
+  font-size: 1rem; /* Set a consistent font size */
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.btn-custom:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border: none; /* Remove border */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Secondary button color */
+  border: none; /* Remove border */
+}
+
+.modal-header {
+  background-color: #007bff; /* Header background color for modal */
+  color: white; /* White text color */
+}
+
+.modal-footer {
+  justify-content: space-between; /* Space between buttons */
+}
+
+.modal-footer .btn {
+  width: 60%; /* Equal width for buttons */
+}
+/* Signup.css */
+
+.signup-form {
+  max-width: 600px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #ddd; /* Light border around the form */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #fff; /* White background */
+}
+
+h2 {
+  margin-bottom: 20px; /* Space between title and form */
+}
+
+.text-primary {
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.error-message {
+  color: red; /* Red color for error messages */
+  margin-bottom: 15px; /* Space below error message */
+}
+
+.btn-block {
+  width: 100%; /* Full width for the button */
+}
+
+p {
+  margin-top: 20px; /* Space above the paragraph */
+}
+
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Login.css */
+
+.login-form {
+  max-width: 600px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #ddd; /* Light border around the form */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #fff; /* White background */
+}
+
+h2 {
+  margin-bottom: 20px; /* Space between title and form */
+}
+
+.text-primary {
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.btn {
+  width: 100%; /* Full width for the button */
+  margin-top: 10px; /* Space above the button */
+}
+
+p {
+  margin-top: 20px; /* Space above any additional text */
+}
+
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+/* Support.css */
+
+.support-page {
+  max-width: 600px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form */
+  padding: 60px; /* Add some padding */
+  border: 1px solid #ddd; /* Light border around the form */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #fff;
+}
+
+h2 {
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.text-center {
+  text-align: center; /* Center text alignment */
+}
+
+.mt-5 {
+  margin-top: 3rem; /* More spacing above the form */
+}
+
+.btn-block {
+  width: 50%; /* Full-width button */
+}

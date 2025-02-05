@@ -19,7 +19,6 @@ import {
   Button,
 } from 'reactstrap';
 import { Link, useLocation } from 'react-router-dom';
-import logo from './assets/logo.jpg';
 import './index.css';
 
 function MyNavbar() {
@@ -39,7 +38,7 @@ function MyNavbar() {
   return (
     <Navbar color="light" light expand="md" role="navigation" aria-label="Main Navigation">
       <NavbarBrand tag={Link} to="/">
-        <img src="logo.jpg" alt="My Brand" style={{ height: '40px' }} />
+        My Brand 
       </NavbarBrand>
       <NavbarToggler onClick={toggleNavbar} />
       <Collapse isOpen={isOpen} navbar>

@@ -19,9 +19,9 @@ import { faRocket, faCheckCircle, faClock, faTools, faShieldAlt, faUsers } from 
 
 // Carousel Items
 const carouselItems = [
-  { src: '/assets/slide1.jpg', altText: 'Slide 1' },
-  { src: '/assets/slide2.jpg', altText: 'Slide 2' },
-  { src: '/assets/slide3.jpg', altText: 'Slide 3' },
+  { src: '/assets/slide1.jpg', altText: 'slide 1' },
+  { src: '/assets/slide2.jpg', altText: 'slide 2' },
+  { src: '/assets/slide3.jpg', altText: 'slide 3' },
 ];
 
 // Features Data

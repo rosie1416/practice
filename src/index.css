@@ -47,27 +47,25 @@
 
 /* Navbar.css */
 
-.btn-custom {
-  padding: 10px 30px; /* Adjust padding for a balanced look */
-  font-size: 1rem; /* Set a consistent font size */
-  border-radius: 5px; /* Slightly rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for hover effects */
+.btn-lg-custom {
+  padding: 12px 24px; /* Increase padding for larger buttons */
+  font-size: 16px; /* Adjust font size */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-.btn-custom:hover {
-  opacity: 0.8; /* Slightly reduce opacity on hover */
-}
-
-.btn-primary {
-  background-color: #007bff; /* Primary button color */
-  border: none; /* Remove border */
+.btn-lg-custom:hover {
+  background-color: #0056b3; /* Darker shade on hover for primary */
+  transform: scale(1.05); /* Slight scaling effect on hover */
 }
 
 .btn-secondary {
   background-color: #6c757d; /* Secondary button color */
-  border: none; /* Remove border */
 }
 
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker shade on hover for secondary */
+}
 .modal-header {
   background-color: #007bff; /* Header background color for modal */
   color: white; /* White text color */

@@ -18,12 +18,14 @@ import {
   ModalFooter,
   Button,
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import logo from './assets/logo.jpg';
 import './index.css';
 
 function MyNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [logoutModal, setLogoutModal] = useState(false);
+  const location = useLocation(); // Get current location for active link
 
   const toggleNavbar = () => setIsOpen(!isOpen);
   const toggleLogoutModal = () => setLogoutModal(!logoutModal);
@@ -35,19 +37,27 @@ function MyNavbar() {
   };
 
   return (
-    <Navbar color="light" light expand="md">
-      <NavbarBrand tag={Link} to="/">My Brand</NavbarBrand>
+    <Navbar color="light" light expand="md" role="navigation" aria-label="Main Navigation">
+      <NavbarBrand tag={Link} to="/">
+        <img src="logo.jpg" alt="My Brand" style={{ height: '40px' }} />
+      </NavbarBrand>
       <NavbarToggler onClick={toggleNavbar} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
           <NavItem>
-            <NavLink tag={Link} to="/">Home</NavLink>
+            <NavLink tag={Link} to="/" active={location.pathname === '/'}>
+              Home
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to="/about">About</NavLink>
+            <NavLink tag={Link} to="/about" active={location.pathname === '/about'}>
+              About
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to="/services">Services</NavLink>
+            <NavLink tag={Link} to="/services" active={location.pathname === '/services'}>
+              Services
+            </NavLink>
           </NavItem>
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
@@ -65,10 +75,9 @@ function MyNavbar() {
           </UncontrolledDropdown>
         </Nav>
         <NavbarText className="d-flex justify-content-center mt-4">
-          <Button color="primary" className="me-2 btn-lg-custom" tag={Link} to="/login">Login</Button>
-          <Button color="secondary" className="btn-lg-custom" tag={Link} to="/signup">Sign Up</Button>
-        </NavbarText>
-
+    <Button color="primary" className="me-2 btn-lg-custom" tag={Link} to="/login">Login</Button>
+    <Button color="secondary" className="btn-lg-custom" tag={Link} to="/signup">SignUp!</Button>
+</NavbarText>
       </Collapse>
 
       {/* Logout Modal */}

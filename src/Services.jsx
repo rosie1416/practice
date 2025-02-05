@@ -14,6 +14,7 @@ import {
   Button 
 } from 'reactstrap';
 
+
 // Import images from the assets folder
 import asset1 from './assets/asset1.jpg';
 import asset2 from './assets/asset2.jpg';

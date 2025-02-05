@@ -19,12 +19,14 @@ import {
   Button,
 } from 'reactstrap';
 import { Link, useLocation } from 'react-router-dom';
+import ThemeToggle from './Themetoggle'; // Import the ThemeToggle component
 import './index.css';
 
 function MyNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [logoutModal, setLogoutModal] = useState(false);
-  const location = useLocation(); // Get current location for active link
+  const location = useLocation();
+   // Get current location for active link
 
   const toggleNavbar = () => setIsOpen(!isOpen);
   const toggleLogoutModal = () => setLogoutModal(!logoutModal);
@@ -73,10 +75,11 @@ function MyNavbar() {
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>
-        <NavbarText className="d-flex justify-content-center mt-4">
-    <Button color="primary" className="me-2 btn-lg-custom" tag={Link} to="/login">Login</Button>
-    <Button color="secondary" className="btn-lg-custom" tag={Link} to="/signup">SignUp!</Button>
-</NavbarText>
+        <NavbarText className="d-flex align-items-center">
+          <ThemeToggle /> {/* Add Theme Toggle here */}
+          <Button color="primary" className="me-2 btn-lg-custom" tag={Link} to="/login">Login</Button>
+          <Button color="secondary" className="btn-lg-custom" tag={Link} to="/signup">SignUp!</Button>
+        </NavbarText>
       </Collapse>
 
       {/* Logout Modal */}
